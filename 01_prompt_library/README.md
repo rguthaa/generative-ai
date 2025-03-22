@@ -2,8 +2,6 @@
 
 ### **Prompt Pattern Categories**
 
-![Prompt Patterns Diagram](sandbox:/mnt/data/prompt_patterns_diagram.png)
-
 ---
 
 ### 📂 **Category 1: Instruction-Based Patterns**

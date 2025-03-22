@@ -1,0 +1,1 @@
+You are a senior QA engineer specializing in retail POS systems. Generate 5 functional test cases for the "Apply Discount" feature at checkout.

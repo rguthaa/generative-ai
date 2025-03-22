@@ -1,0 +1,1 @@
+Generate 3 test cases for "Coupon Expiry". Max 30 words each.

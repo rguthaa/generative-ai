@@ -1,0 +1,1 @@
+Provide 3 test cases for "Loyalty Points Redemption" in JSON:

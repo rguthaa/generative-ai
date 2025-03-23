@@ -76,7 +76,7 @@
 flowchart TD
     A[Start: Prompt Received] --> B{Prompt Category?}
 
-    B --> C1[Instruction-Based]
+    B --> C1[**Instruction-Based**]
     C1 --> D1[Retrieve general knowledge]
     D1 --> E1{Constraints Present?}
     E1 -->|Yes| F1[Apply limits / rules]
@@ -84,12 +84,12 @@ flowchart TD
     F1 --> H1[Generate Output]
     G1 --> H1
 
-    B --> C2[Contextual / Role-Based]
+    B --> C2[**Contextual / Role-Based**]
     C2 --> D2[Adjust tone/role/audience]
     D2 --> E2[Scope to context]
     E2 --> F2[Generate Persona-aligned Output]
 
-    B --> C3[Reasoning-Driven]
+    B --> C3[**Reasoning-Driven**]
     C3 --> D3[Perform step-by-step reasoning]
     D3 --> E3{Tree/Branch paths?}
     E3 -->|Yes| F3[Explore multiple paths]
@@ -98,15 +98,15 @@ flowchart TD
     G3 --> H3
     H3 --> I3[Generate Refined Output]
 
-    B --> C4[Example-Driven]
+    B --> C4[**Example-Driven**]
     C4 --> D4[Imitate examples]
     D4 --> E4[Generate output matching example style]
 
-    B --> C5[Output-Format Driven]
+    B --> C5[**Output-Format Driven**]
     C5 --> D5[Structure output - JSON/Table/YAML]
     D5 --> E5[Generate formatted output]
 
-    B --> C6[Advanced / Hybrid Patterns]
+    B --> C6[**Advanced / Hybrid Patterns**]
     C6 --> D6[Retrieve External Knowledge - RAG]
     D6 --> E6[Multi-modal Reasoning or Debate]
     E6 --> F6[Generate decision/comparison output]

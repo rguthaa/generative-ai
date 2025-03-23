@@ -1,5 +1,7 @@
-Think step by step about the conditions influencing the discount application:
-- Is the cart total above $200?
-- Is the customer a loyalty member?
-- Are gift cards excluded?
-  Then generate 5 test cases.
+Task:
+For the Refund feature, think through multiple possible paths based on the following conditions:
+- Is the product refundable?
+- Is it within the refund period?
+- Is the receipt available?
+
+Build reasoning paths (tree) and suggest test cases for success and failure branches.

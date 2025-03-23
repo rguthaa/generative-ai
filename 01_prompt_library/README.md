@@ -69,3 +69,46 @@
 | **Retrieval-Augmented (RAG)**    | External knowledge injection                 | Best for spec-driven test case generation, RAG pipelines      | Model conditions generation strictly on retrieved knowledge |
 | **Multi-modal Prompting**        | Combine text, images, audio                   | Useful for UI test cases, image-based flows                   | Model processes multiple modalities, integrating vision/audio into reasoning |
 | **Debate / Self-Critique / Agent Prompting** | Force pros/cons or debates         | Great for risk-based reasoning, coverage expansion            | Model generates both sides of reasoning and critiques itself or generates agent-like debates |
+
+## ✅ What happens inside the Model?
+
+```mermaid
+flowchart TD
+    A[Start: Prompt Received] --> B{Prompt Category?}
+
+    B --> C1[Instruction-Based]
+    C1 --> D1[Retrieve general knowledge]
+    D1 --> E1{Constraints Present?}
+    E1 -->|Yes| F1[Apply limits / rules]
+    E1 -->|No| G1[Skip constraints]
+    F1 --> H1[Generate Output]
+    G1 --> H1
+
+    B --> C2[Contextual / Role-Based]
+    C2 --> D2[Adjust tone/role/audience]
+    D2 --> E2[Scope to context]
+    E2 --> F2[Generate Persona-aligned Output]
+
+    B --> C3[Reasoning-Driven]
+    C3 --> D3[Perform step-by-step reasoning]
+    D3 --> E3{Tree/Branch paths?}
+    E3 -->|Yes| F3[Explore multiple paths]
+    E3 -->|No| G3[Linear reasoning]
+    F3 --> H3[Self-review if iterative]
+    G3 --> H3
+    H3 --> I3[Generate Refined Output]
+
+    B --> C4[Example-Driven]
+    C4 --> D4[Imitate examples]
+    D4 --> E4[Generate output matching example style]
+
+    B --> C5[Output-Format Driven]
+    C5 --> D5[Structure output - JSON/Table/YAML]
+    D5 --> E5[Generate formatted output]
+
+    B --> C6[Advanced / Hybrid Patterns]
+    C6 --> D6[Retrieve External Knowledge - RAG]
+    D6 --> E6[Multi-modal Reasoning or Debate]
+    E6 --> F6[Generate decision/comparison output]
+```
+

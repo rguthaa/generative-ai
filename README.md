@@ -2,7 +2,7 @@
 
 ## 👋 Welcome
 
-I'm a senior software professional with 20+ years of experience, currently focused on exploring and applying **prompt engineering strategies and architectures** in Generative AI systems.
+I'm a senior software professional with 19+ years of experience, currently focused on exploring and applying **prompt engineering strategies and architectures** in Generative AI systems.
 
 This repository is my **personal learning lab** — it captures hands-on exploration of **prompt patterns**, **LLM behavior**, and how to build structured, explainable AI workflows using models like GPT-4, Claude, and open-source LLMs.
 
